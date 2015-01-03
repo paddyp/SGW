@@ -4,6 +4,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 <title>SG 1956 Wambach</title>
 
+
+<link rel="shortcut icon" href="img/favicon.ico" />
+
+
 <link href="css/style.css" rel="stylesheet" type="text/css"/>
 <!-- Hauptgroessen -->
 
