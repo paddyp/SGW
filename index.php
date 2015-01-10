@@ -21,10 +21,28 @@
 
 <body>
 
-<h1><img src="img/wappen.jpg" width="50px"/> SG Wambach</h1>
-<p>
-Unter diesem link ist der aktuelle Stand der SG Wambach Seite einzusehen.
-</p>
+<div class="main">
+    <div class="header">
+   		<img src="img/header.png" />
+        <div class="navigation">
+        
+        </div>
+    </div>
+    
+    <div class="content">
+    	 <img src="img/content.png" /> 
+    </div>
+    
+    <div class="footer">
+    	<p>
+    		Unter diesem link ist der aktuelle Stand der SG Wambach Seite einzusehen.
+    	</p>
+    </div>
+
+</div>
+
+
+
 
 </body>
 </html>
