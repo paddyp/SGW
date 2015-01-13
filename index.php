@@ -23,14 +23,48 @@
 
 <div class="main">
     <div class="header">
-   		<img src="img/header.png" />
-        <div class="navigation">
-        
+     	<div id="logo">
+        	<img src="img/logo.png" />
+        </div> 
+        <div id="titel">
+        	SG Wambach 1956 e.V.
+        </div> 
+        <div id="newsletter">
+        Nichts verpassen? Newsleter abbonieren !
+        <form>
+        <input type="email" id="inputEmail" /> <input type="button" />
+        </form>
         </div>
+        
+        <div id="impressum">
+        	<a>Impressum</a>
+        </div>
+       
     </div>
+     <div class="navigation">
+     	<div id="content">
+        	Startseite Neuigkeiten Sportangebote Ausfl&uuml;ge Termine &Uuml;ber uns
+        </div>   
+     </div>
     
     <div class="content">
-    	 <img src="img/content.png" /> 
+         <?php
+		 $id;
+		 
+		 if(!isset($_GET['id'])){
+		 	$id = 1;
+		 }else{
+			$id = $_GET['id']; 
+		 }
+		 
+		 switch($id)
+		 {
+			case 1: include('inc/startseite.php');break;
+			case 2: include('inc/startseite2.php');break;
+			default: include('inc/startseite.php'); 
+		 }
+		 ?>
+        
     </div>
     
     <div class="footer">
