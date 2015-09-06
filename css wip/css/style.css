@@ -1,0 +1,329 @@
+html{
+    background-image: url(../img/background_stripes.png);
+    background-attachment: fixed;
+}
+
+div.wrapper{
+    display: block;
+    width: 1000px;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px;
+    font-family: sans-serif;
+    border-radius: 50px;
+    overflow: hidden;
+    -webkit-box-shadow: 0px 0px 100px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow:    0px 0px 100px 0px rgba(0,0,0,0.75);
+    box-shadow:         0px 0px 100px 0px rgba(0,0,0,0.75);
+    background-color: #BE0000;
+    
+}
+
+div.header{
+    background-color: #000000;
+    display: block;
+    width: auto;
+    height: 100px;
+    color: #FFFFFF;
+    position: relative;
+    background-image: url(../img/header_bg.png);
+    background-repeat: no-repeat;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow:    0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow:         0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+a.logo img{
+    width: 80px;
+    height: 80px;
+    padding: 10px;
+}
+
+div.main_navigation{
+    display: block;
+    text-align: center;
+    position: absolute;
+    bottom: 10px;
+    width: 1000px;
+}
+
+div.main_navigation a{
+    display: inline-block;
+    color: #FFFFFF;
+    text-decoration: none;
+    padding: 5px;
+    margin: 0px;
+}
+
+div.main_navigation a.active{
+    color: #BE0000;
+    font-weight: bold;
+}
+
+div.main_navigation a:HOVER{
+    color: #BE0000;
+}
+
+form.newsletter{
+    position: absolute;
+    top: 25px;
+    right: 20px;
+}
+
+div.header div.title_tab{
+    z-index: 100;
+    display: block;
+    padding: 5px;
+    padding-top: 8px;
+    width: 219px;
+    height: 29px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    bottom: 5px;
+    font-size: small;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/title_tab.png);
+}
+
+div.stage{
+    background-color: #BE0000;
+    display: block;
+    width: auto;
+    height: 240px;
+    clear: both;
+    padding-top: 10px;
+}
+
+div.stage div.column_small{
+    display: block;
+    width: 250px;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+}
+
+div.stage div.column_big{
+    display: block;
+    width: 500px;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
+    float: left;
+}
+
+div.stage a.stage_frame{
+    display: block;
+    border: 5px #BE0000 solid;
+    -webkit-box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.60);
+    -moz-box-shadow:    0px 0px 5px 0px rgba(0,0,0,0.60);
+    box-shadow:         0px 0px 5px 0px rgba(0,0,0,0.60);
+}
+
+div.stage a.stage_button{
+    display: table;
+    color: #FFFFFF;
+    background-color: #000000;
+    height: 60px;
+    margin: auto;
+    margin-bottom: 10px;
+    font-weight: bold;
+    text-decoration: none;
+    width: 220px;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+div.stage a.stage_button:HOVER{
+    background-color: #BE0000;
+    color: #000000;
+}
+
+div.button_text{
+    display: table-cell;
+    text-align: center;
+    vertical-align: middle;
+}
+
+a.stage_highlight{
+    display: block;
+    overflow: hidden;
+    position: relative;
+}
+
+a.stage_highlight img{
+    margin: 0;
+    padding: 0;
+    border: none;
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+    margin: auto;
+    transition: transform 0.2s;
+}
+
+a.stage_highlight:HOVER img{
+    transform: scaleX(1.1) scaleY(1.1);
+}
+
+a.stage_highlight_big{
+    width: 490px;
+    height: 220px;
+    background-color: #000000;
+}
+
+a.stage_highlight_small{
+    color: #FFFFFF;
+    background-color: #000000;
+    height: 100px;
+    margin: auto;
+    margin-bottom: 10px;
+    width: 220px;
+    background-image: url(../img/logo.png);
+}
+
+a.stage_highlight div.details{
+    text-decoration: none;
+    display: block;
+    margin: 0;
+    background-color: rgba(0, 0, 0, 0.75);
+    position: absolute;
+    width: 480px;
+    bottom: 0px;
+    padding: 5px;
+    transition: background-color 0.2s;
+}
+
+a.stage_highlight:HOVER div.details{
+    background-color: #000000;
+}
+
+a.stage_highlight div.details p:NTH-CHILD(1){
+    color: #BE0000;
+    margin: 0;
+    font-weight: bold;
+}
+
+a.stage_highlight div.details p:NTH-CHILD(2){
+    color: #FFFFFF;
+    margin: 0;
+}
+
+div.tiles{
+    background-color: #000000;
+    display: block;
+    width: auto;
+    height: 420px;
+    padding-left: 10px;
+    padding-top: 10px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow:    0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow:         0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+div.tiles div.tile{
+    display: block;
+    background-color: #FFFFFF;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    float: left;
+    height: 200px;
+    background-image: -webkit-gradient(
+    	linear,
+    	left top,
+    	left bottom,
+    	color-stop(0, #2B2B2B),
+    	color-stop(1, #0D0D0D)
+    );
+    background-image: -o-linear-gradient(bottom, #2B2B2B 0%, #0D0D0D 100%);
+    background-image: -moz-linear-gradient(bottom, #2B2B2B 0%, #0D0D0D 100%);
+    background-image: -webkit-linear-gradient(bottom, #2B2B2B 0%, #0D0D0D 100%);
+    background-image: -ms-linear-gradient(bottom, #2B2B2B 0%, #0D0D0D 100%);
+    background-image: linear-gradient(to bottom, #2B2B2B 0%, #0D0D0D 100%);
+}
+
+div.tiles div.tile p:NTH-CHILD(1){
+    display: block;
+    background-color: #BE0000;
+    color: #FFFFFF;
+    font-weight: bold;
+    padding: 5px;
+    margin: 0; 
+}
+
+div.tiles div.half{
+    width: 485px;
+}
+
+div.tiles div.third{
+    width: 320px;
+}
+
+div.welcome_text{
+    display: block;
+    width: auto;
+    height: 300px;
+    padding: 10px;
+    clear: both;
+    background-image: url(../img/logo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+div.welcome_text div.heading{
+    font-weight: bold;
+    font-size: large;
+}
+
+div.welcome_text p{
+    width: 300px;
+    float: left;
+    margin-right: 20px;
+}
+
+div.footer{
+    background-color: #000000;
+    clear: both;
+    display: block;
+    width: auto;
+    position: relative;
+    height: 100px;
+    padding: 10px;
+    padding-left: 200px;
+    -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow:    0px 0px 10px 0px rgba(0,0,0,0.75);
+    box-shadow:         0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+div.footer div.title_tab{
+    display: block;
+    color: #FFFFFF;
+    padding: 5px;
+    padding-top: 20px;
+    width: 150px;
+    text-align: center;
+    position: absolute;
+    top: -42px;
+    left: 0px;
+    margin-left: 385px;
+    margin-right: auto;
+    font-size: small;
+    width: 219px;
+    height: 17px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: url(../img/title_tab_bottom.png);
+}
+
+div.footer p{
+    display: inline-block;
+    width: 300px;
+    float: left;
+    margin-top: 0px;
+    margin: auto;
+    color: #FFFFFF;
+}
