@@ -133,12 +133,16 @@ div.stage a.stage_button{
     margin-bottom: 10px;
     font-weight: bold;
     text-decoration: none;
-    transition: background-color 0.2s, color 0.2s;
+    transition: background-color 0.2s, color 0.2s, border-left 0.2s, padding-left 0.2s, border-right 0.2s, padding-right 0.2s;
 }
 
 div.stage a.stage_button:HOVER{
     background-color: #BE0000;
     color: #000000;
+    border-left: none;
+    padding-left: 5px;
+    border-right: none;
+    padding-right: 5px;
 }
 
 div.button_text{
@@ -216,13 +220,23 @@ a.stage_highlight div.details > p:NTH-CHILD(2){
 div.tiles{
     display: block;
     width: auto;
-    height: 520px;
     background-color: #000000;
     padding-left: 10px;
     padding-top: 10px;
+    clear: both;
     -webkit-box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.75);
     -moz-box-shadow:    0px 0px 10px 0px rgba(0,0,0,0.75);
     box-shadow:         0px 0px 10px 0px rgba(0,0,0,0.75);
+}
+
+div.tiles:AFTER{
+    /*clearfix*/
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
 }
 
 div.tiles div.tile{
@@ -233,6 +247,7 @@ div.tiles div.tile{
     margin-right: 10px;
     margin-bottom: 10px;
     float: left;
+    overflow: hidden;
 }
 
 div.tiles div.tile > p:NTH-CHILD(1){
@@ -250,11 +265,22 @@ div.tiles div.tile a.event{
     text-decoration: none;
     color: #FFFFFF;
     border-left-color: #BE0000;
+    clear: both;
     transition: border-left 0.1s, background-color 0.1s, color 0.1s;
 }
 
 div.tiles div.tile a.event:NTH-CHILD(ODD){
-    background-color: #0A0A0A;
+    background-color: #050505;
+}
+
+div.tiles div.tile a.event:AFTER{
+    /*clearfix*/
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
 }
 
 div.tiles div.tile a.event:HOVER{
@@ -272,12 +298,35 @@ div.tiles div.tile a.event > p:NTH-CHILD(1){
     font-weight: bold;
 }
 
+div.tiles div.tile a.event > p:NTH-CHILD(2){
+    float: left;
+}
+
+div.tiles div.tile a.event > p:NTH-CHILD(3){
+    color: #808080;
+    float: right;
+}
+
+
 div.tiles div.half{
     width: 485px;
 }
 
 div.tiles div.third{
     width: 320px;
+}
+
+div.tiles div.third_2rows{
+    width: 320px;
+    height: 510px;
+}
+
+div.tiles div.two_thirds{
+    width: 650px;
+}
+
+div.tiles div.full{
+    width: 980px;
 }
 
 div.welcome_text{
