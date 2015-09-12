@@ -298,15 +298,68 @@ div.tiles div.tile a.event > p:NTH-CHILD(1){
     font-weight: bold;
 }
 
-div.tiles div.tile a.event > p:NTH-CHILD(2){
-    float: left;
+div.tiles div.tile a.event:HOVER > p:NTH-CHILD(2){
+    display: none;
 }
 
 div.tiles div.tile a.event > p:NTH-CHILD(3){
-    color: #808080;
-    float: right;
+    color: #000000;
+    display: none;
 }
 
+div.tiles div.tile a.event:HOVER > p:NTH-CHILD(3){
+    display: inline;
+}
+
+div.tiles div.tile a.news_item{
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: #FFFFFF;
+    border-left-color: #BE0000;
+    clear: both;
+    transition: border-left 0.1s, background-color 0.1s, color 0.1s, padding-right 0.1s;
+}
+
+div.tiles div.tile a.news_item:NTH-CHILD(ODD){
+    background-color: #050505;
+}
+
+div.tiles div.tile a.news_item:AFTER{
+    /*clearfix*/
+    content: ".";
+    display: block;
+    clear: both;
+    visibility: hidden;
+    line-height: 0;
+    height: 0;
+}
+
+div.tiles div.tile a.news_item:HOVER{
+    border-left: solid thick #BE0000;
+    background-color: #E6E6E6;
+    color: #000000;
+    padding-right: 0;
+}
+
+div.tiles div.tile a.news_item > p{
+    margin: 0;
+}
+
+div.tiles div.tile a.news_item > p:NTH-CHILD(1){
+    color: #BE0000;
+    font-weight: bold;
+}
+
+div.tiles div.tile a.news_item > p:NTH-CHILD(2){
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+div.tiles div.tile a.news_item > p:NTH-CHILD(3){
+    text-align: right;
+    color: #BE0000;
+}
 
 div.tiles div.half{
     width: 485px;
@@ -343,6 +396,8 @@ div.welcome_text{
 div.welcome_text div.heading{
     font-weight: bold;
     font-size: large;
+    padding-top: 10px;
+    text-align: center;
 }
 
 div.welcome_text p{
