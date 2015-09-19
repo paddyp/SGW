@@ -447,3 +447,12 @@ div.footer p{
     margin-top: 0px;
     margin: auto;
 }
+
+div.footer a{
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+div.footer a:HOVER{
+    color: #BE0000;
+}
