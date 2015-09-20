@@ -361,25 +361,24 @@ div.tiles div.tile a.news_item > p:NTH-CHILD(3){
     color: #BE0000;
 }
 
-div.tiles div.half{
+div.tiles div._50{
     width: 485px;
 }
 
-div.tiles div.third{
+div.tiles div._33{
     width: 320px;
 }
 
-div.tiles div.third_2rows{
-    width: 320px;
-    height: 510px;
-}
-
-div.tiles div.two_thirds{
+div.tiles div._66{
     width: 650px;
 }
 
-div.tiles div.full{
+div.tiles div._100{
     width: 980px;
+}
+
+div.tiles div.x2{
+    height: 510px;
 }
 
 div.welcome_text{
