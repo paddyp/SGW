@@ -1,0 +1,20 @@
+@charset "UTF-8";
+/* CSS Document main style*/
+
+.header{
+	position: relative;	
+}
+
+.header #titel{
+	color: white;	
+}
+
+.header #newsletter{
+	color: white;
+}
+
+.navigation{
+	position: relative;
+		
+}
+
